@@ -1,0 +1,9 @@
+#!/bin/sh
+# Simple infinite loop script for old UNIX/Bourne sh systems
+# Runs ./psf every few seconds and pipes output to espeak
+
+while sleep 65
+do
+    ./psf | espeak -a200 -s55
+done
+
