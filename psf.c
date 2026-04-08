@@ -45,6 +45,7 @@ Action analyze_choose_action(const Model *m, const SensorVec *s) {
     double best_score = -INFINITY;
     Action best_action = SELF;
     for (int a = 0; a < ACTION_COUNT; ++a) {
+        sched_yield();
         double score = m->bias[a];
         for (int i = 0; i < SENSOR_DIM; ++i)
             score += m->weights[a][i] * s->v[i];
