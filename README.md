@@ -1,5 +1,6 @@
 # psf
 - self detector
+- Trained on local random numbers; Markov Chains, 1906, explains it.
 ## Purpose
 - Is teleoperated robot unstatisfying?
 - If you ask who are you and robot turns and hides.
